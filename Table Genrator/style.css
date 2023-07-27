@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(7, 200, 7, 0.811);
+    height: 100vh;
+}
+.table,body,.table-container,.number-collector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table,body,.table-container{
+    flex-direction: column;
+}
+.table-container{
+    color: #494848;
+    background-color: #ffffff70;
+    height: 80vh;
+    justify-content: flex-start;
+    padding: 30px;
+    gap: 10px;
+    width: 70%;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+.table-container h1{
+    font-size: 30px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+.number-collector{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.number-collector button{
+    background-color: rgb(0, 163, 0);
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: Poppins;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.number-collector button:hover{
+    box-shadow: 0 0 7px 5px rgb(26, 206, 26);
+}
+.number-collector input{
+    width: 35%;
+    padding: 10px;
+    border: 2px solid rgb(36, 193, 36);
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    background: none;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+.table-container input:focus{
+    border: 2px solid rgb(23, 133, 13);
+}
+.table span {
+    font-size: 28px;
+    font-family: Poppins;
+    align-self: stretch;
+    letter-spacing: 8px;
+}
